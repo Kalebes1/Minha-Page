@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*Geral*/
+
+.row {
+    color: #FFF;
+}
+.img-thumbnail{
+    border: none;
+    background-color: transparent;
+}
+
+/* Barra de navegação*/
+#logo {
+    width: 75px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar .navbar-collapse ul {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.navbar-brand span {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #FFF;
+    margin-left: 15px;
+}
+
+.navbar .navbar-nav li a {
+    font-size: 18px;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link {
+    color: #FFF;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link:hover {
+    color: #009688;
+}
+
+/*.main-section*/
+
+.main-section {
+    height: 800px;
+    background-color: #CCC;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('/media/background-1.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.main-section .row .text-1{
+    width: 200px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 15px;
+    font-weight: 400;
+    border: 2px solid#009688;
+    background-color: #009688;
+    position: relative;
+}
+.main-section .row .text-1:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #009688;
+    bottom: -20px;
+    left: 20%;
+}
+.main-section .row{
+    height: 800px;
+    align-items: center;
+
+}
+.main-section .row .name{
+    font-size: 60px;
+}
+.main-section .row img{
+    margin-top: 15px;
+    width: 300px;
+    border-radius: 150px;
+    background-color: #212529;
+    border: 1px solid #212529;
+    padding: 0.50rem;
+}
+.main-section .row i{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #CCC;
+}
+.main-section .row i:hover{
+    color: #009688;
+}
+
+/*about-me*/
+.about-me{
+    height: 1200px;
+    background-image: linear-gradient(180deg, #41405C, #2F2E42);
+}
+.about-me .row .col-sm-6{
+    margin-top: 50px;
+} 
+.languages ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.languages ul li{
+    display: inline-block;
+    margin: 0 6px;
+    padding: 4px 0px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.languages ul li span{
+    border: 3px solid #009688;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.about-me a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFF;
+    width: 300px;
+    margin-top: 25px;
+    border: 1px solid #009688;
+    padding: 15px;
+    background-color: #009688;
+    border-radius: 50px;
+    text-align: center;
+}
+.about-me .our-service{
+    color: #FFF;
+}
+.about-me .our-service .glass{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #4A4969;
+    box-shadow: #009688;
+    height: 250px;
+}
+.about-me .our-service i{
+    font-size: 30px;
+    margin-right: 15px;
+}
+.about-me .our-service .row h2{
+    margin-top: 15px;
+    font-weight: 500;
+}
+.about-me .our-service .row p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+
+@media(max-width: 991px){
+    .about-me{
+        height: 1500px;
+    }
+    .about-me .our-service .glass{
+        height: 300px;
+    }
+}
+@media(max-width: 767px){
+    .about-me{
+        height: 2000px;
+    }
+}
+@media (max-width: 575px){
+    .main-section .row .col-sm-6{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-section .row .name{
+        font-size: 50px;
+    }
+    .main-section .row i{
+        font-size: 30px;
+    }
+    .main-section .row img{
+        width: 250px;
+    }
+}
