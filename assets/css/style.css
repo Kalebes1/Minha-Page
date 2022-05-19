@@ -52,7 +52,7 @@ body {
 .main-section {
     height: 800px;
     background-color: #CCC;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('/media/background-1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../../media/background-1.jpg');
     background-position: center;
     background-size: cover;
     overflow: hidden;
