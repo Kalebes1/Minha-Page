@@ -17,8 +17,15 @@ body {
 #logo {
     width: 75px;
 }
-
-.navbar {
+header nav{
+    position: fixed;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
     padding: 0;
 }
 
@@ -107,7 +114,7 @@ body {
 
 /*about-me*/
 .about-me{
-    height: 1200px;
+    height: 1000px;
     background-image: linear-gradient(180deg, #41405C, #2F2E42);
 }
 .about-me .row .col-sm-6{
@@ -130,7 +137,7 @@ body {
     padding: 4px 10px;
     border-radius: 4px;
 }
-.about-me a{
+.about-me .donwload-cv a{
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
@@ -167,13 +174,188 @@ body {
     font-size: 15px;
     font-weight: 400;
 }
+/*hire-me*/
+.skills-me{
+    height: 800px;
+    background-color: #262536;
+}
+.skills-me h1{
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+/*hire-me habilidades técnicas*/
+.skills-me .skils-technical, .professional-skills{
+    margin-top: 60px;
+}
+.skills-me .skils-technical h2{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.progress-bar-one{
+    background: #959595;
+    width: 100%;
+    height: 10px;
+    border-radius: 15px;
+}
+.progress-bar-one div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+.progress-bar-one div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #212529;
+    float:right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.html{
+    background: #e91e63;
+    animation: html 1s linear forwards;
+}
+.css{
+    background: #00ACEE;
+    animation: css 1s linear forwards;
+}
+.bootstrap{
+    background: #00bcd4;
+    animation: bootstrap 1s linear forwards;
+}
+.mysql{
+    background: #9c27b0;
+    animation: mysql 1s linear forwards;
+}
+.nodejs{
+    background: #ffeb3b;
+    animation: nodejs 1s linear forwards;
+}
+.reactjs{
+    background: #94cc33;
+    animation: reactjs 1s linear forwards;
+}
+.html span{
+    border: 1px solid #e91e63;
+}
+.css span{
+    border: 1px solid #00ACEE;
+}
+.bootstrap span{
+    border: 1px solid #00bcd4;
+}
+.mysql span{
+    border: 1px solid #9c27b0;
+}
+.nodejs span{
+    border: 1px solid #ffeb3b;
+}
+.reactjs span{
+    border: 1px solid #94cc33;
+}
+@keyframes html{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes bootstrap{
+    100%{
+        width: 65%;
+    }
+}
+@keyframes mysql{
+    100%{
+        width: 65%;
+    }
+}
+@keyframes nodejs{
+    100%{
+        width: 15%;
+    }
+}
+@keyframes reactjs{
+    100%{
+        width: 10%;
+    }
+}
+/*hire-me habilidades Profissionais*/
+.professional-skills{
+    width: 160px;
+    height: 160px;
+    /*background: cornflowerblue;*/
+    position: relative;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(28, 84, 238, 0.15),
+        -6px -6px 10px -1px rgba(35, 48, 88, 0.7)
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(78, 61, 122, 0.76)
+                inset -4px -4px 6px -1px rgba(75, 74, 104, 0.863),
+                -0.5px -0.5px 0px rgba(64, 62, 94, 0.829),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+.number{
+    font-size: 35px;
+    font-weight: 800;
+    color: #FFF;
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 94;
+    }
+}
 
 
 
-
+/*media*/
 @media(max-width: 991px){
+    .about-me .donwload-cv{
+        margin-top: 50px;
+    }
+    .about-me .donwload-cv a{
+        display: block;
+        margin: auto;
+    }
     .about-me{
-        height: 1500px;
+        height: 1400px;
     }
     .about-me .our-service .glass{
         height: 300px;
@@ -185,6 +367,9 @@ body {
     }
 }
 @media (max-width: 575px){
+    .main-section .row .col-sm-6:first-child{
+       margin-top: 50px;
+    }
     .main-section .row .col-sm-6{
         display: flex;
         flex-direction: column;
