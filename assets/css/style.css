@@ -3,6 +3,21 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/*Scroll*/
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: #CCC;
+    border: 5px solid white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #009688;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+
 /*Geral*/
 
 .row {
@@ -12,6 +27,12 @@ body {
     border: none;
     background-color: transparent;
 }
+ul{
+    padding: 0;
+}
+li {
+    list-style-type: none;
+  }
 
 /* Barra de navegação*/
 #logo {
@@ -53,6 +74,10 @@ header nav{
 .navbar.navbar-dark .navbar-nav .nav-link:hover {
     color: #009688;
 }
+
+
+
+
 
 /*.main-section*/
 
@@ -111,6 +136,10 @@ header nav{
 .main-section .row i:hover{
     color: #009688;
 }
+
+
+
+
 
 /*about-me*/
 .about-me{
@@ -179,15 +208,32 @@ header nav{
     height: 800px;
     background-color: #262536;
 }
+.skills-me .divider{
+    padding: 100px 0px;
+    padding-bottom: 100px;
+}
+.skills-me .glass{
+    margin-right: 50px;
+}
+.skills-me .glass2{
+    margin-left: 50px;
+
+}
 .skills-me h1{
+    text-align: center;
+    font-size: 30px;
     text-transform: uppercase;
     color: #FFF;
+    margin-bottom: 60px;
+}
+.skills-me ul li{
+    display: inline-block;
+    width: 49%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*hire-me habilidades técnicas*/
-.skills-me .skils-technical, .professional-skills{
-    margin-top: 60px;
-}
 .skills-me .skils-technical h2{
     font-size: 16px;
     font-weight: 400;
@@ -196,7 +242,7 @@ header nav{
 }
 .progress-bar-one{
     background: #959595;
-    width: 100%;
+    width: 95%;
     height: 10px;
     border-radius: 15px;
 }
@@ -292,31 +338,35 @@ header nav{
 }
 /*hire-me habilidades Profissionais*/
 .professional-skills{
+    display: inline-block;
+    margin-top: 30px;
     width: 160px;
     height: 160px;
-    /*background: cornflowerblue;*/
     position: relative;
 }
+.skill-name{
+    font-size: 16px;
+}
 .outer{
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 140px;
     border-radius: 50%;
     padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(28, 84, 238, 0.15),
-        -6px -6px 10px -1px rgba(35, 48, 88, 0.7)
+    box-shadow: 6px 6px 10px -1px rgba(35, 82, 170, 0.644),
+        -6px -6px 10px -1px rgba(58, 79, 143, 0.7)
 }
 .inner{
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    box-shadow: inset 4px 4px 6px -1px rgba(78, 61, 122, 0.76)
-                inset -4px -4px 6px -1px rgba(75, 74, 104, 0.863),
-                -0.5px -0.5px 0px rgba(64, 62, 94, 0.829),
-                0.5px 0.5px 0px rgba(0,0,0,0.15),
-                0px 12px 10px -10px rgba(0,0,0,0.05);
+    box-shadow: inset 4px 4px 6px -1px rgba(78, 61, 122, 0.2)
+                inset -4px -4px 6px -1px rgba(80, 76, 173, 0.7),
+                -0.5px -0.5px 0px rgba(72, 64, 187, 1),
+                0.5px 0.5px 0px rgba(22, 39, 194, 0.15),
+                0px 12px 10px -10px rgba(28, 55, 177, 0.05)
 }
 .number{
     font-size: 35px;
@@ -339,7 +389,7 @@ svg{
 
 @keyframes anim{
     100%{
-        stroke-dashoffset: 94;
+        stroke-dashoffset: 100;
     }
 }
 
@@ -360,6 +410,29 @@ svg{
     .about-me .our-service .glass{
         height: 300px;
     }
+    .skills-me{
+        height: 1400px;
+    }
+    .skills-me .col-lg-6:last-child{
+        margin-top: 100px;
+    }
+    .skils-technical{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .skills-me .glass, .skills-me .glass2{
+       margin: 0;
+    }
+    .skills-me ul li{
+        display: inline-block;
+        width: 45%;
+        padding-left: 0;
+    }
+   
 }
 @media(max-width: 767px){
     .about-me{
@@ -368,8 +441,8 @@ svg{
 }
 @media (max-width: 575px){
     .main-section .row .col-sm-6:first-child{
-       margin-top: 50px;
-    }
+        margin-top: 50px;
+     }
     .main-section .row .col-sm-6{
         display: flex;
         flex-direction: column;
@@ -385,4 +458,7 @@ svg{
     .main-section .row img{
         width: 250px;
     }
+    
 }
+
+
