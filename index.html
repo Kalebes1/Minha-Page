@@ -9,10 +9,22 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/536742de5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>Kalebe Silva</title>
 </head>
 
 <body>
+
+
+
+    
+      <!--
+                HEADER 
+        -->
+
+
+
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container ">
@@ -47,11 +59,21 @@
         </nav>
     </header>
 
+
+
+
+  <!--
+                MAIN SECTION HOME  
+        -->
+
+
+
+
     <main>
         <section class="main-section">
             <div class="container-fluid">
                 <div class="container">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center ">
                         <div class="col-sm-6">
                             <p class="text-1">Olá, me chamo</p>
                             <h1 class="name ms-4">Kalebe Silva</h1>
@@ -73,88 +95,107 @@
             </div>
         </section>
 
+
+
+     <!--
+                SECTION SOBRE 
+        -->
+
+
+
         <section class="about-me">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 mt-5">
-                        <img src="media/teste.png" class="img-thumbnail" alt="promgração">
-                    </div>
-                    <div class="col-lg-6 mt-5 mb-5">
-                        <div class="content">
-                            <h1>Sobre mim</h1>
-                            <p class="fs-6 fw-normal text-justify mt-4">Tenho 22 anos, sou morador de
-                                Águas Lindas de Goiás, cidade que fica no entorno do Distrito Federa e estou no fim do
-                                meu curso de Análise
-                                e Desenvolvimento de Sistema. Amo
-                                desafios e sei que essa área requer muito mais que uma faculdade, por isso tenho me
-                                capacitado para se tornar um profissional atualizado e competente.
-                                Domino algumas linguagens de front-end e no momento estou estudando Nodejs e ReactJs
-                                para aprimorar e elevar meus conhecimentos.
-                            </p>
+                <div class="divider">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <img src="media/teste.png" class="img-thumbnail" alt="promgração">
                         </div>
-                        <div class="languages">
-                            <ul>
-                                <li><span>HTMl</span></li>
-                                <li><span>CSS</span></li>
-                                <li><span>Javascript</span></li>
-                                <li><span>Bootstrap</span></li>
-                                <li><span>Nodejs</span></li>
-                                <li><span>ReactJs</span></li>
-                                <li><span>MySQL</span></li>
-                                <li><span>Postgres</span></li>
-                            </ul>
-                        </div>
-                        <div class="donwload-cv">
-                            <a href="assets/documents/Kalebe.pdf" class="">Donwload CV <i
-                                    class="fa-solid fa-download"></i>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="our-service mt-5">
-                    <h1 class="d-flex justify-content-center">Etapas do meu processo</h1>
-
-                    <div class="row mt-5">
-                        <div class="col-md-4 mb-3">
-                            <div class="glass">
-                                <i class="fa-brands fa-html5" style="color:#E54B25;"></i><i class="fa-brands fa-css3"
-                                    style="color:#396DC0;"></i>
-                                <h2>Front-End</h2>
-                                <p>Etapa relacionada com interface, focando na experiência do usuário. Dentre as
-                                    diversas tecnologias temos, HTML, CSS, Bootstrap, ReactJs entre outras.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-
-                            <div class="glass">
-                                <i class="fa-brands fa-node-js"></i><i class="fa-brands fa-js"
-                                    style="color: #F7E018;"></i>
-                                <h2>Back-End</h2>
-                                <p>Essa etapa não é visívil ao usuário, contudo, é de super importância, visto que é
-                                    responsável por guardar as informações, gerenciar conteúdos e atualizações. Dentre
-                                    as tecnologias temos, PHP, Nodejs, Python, Java, entre outras.
+                        <div class="col-lg-6 mb-5">
+                            <div class="content">
+                                <h1>Sobre mim</h1>
+                                <p class="fs-6 fw-normal text-justify mt-4">Tenho 22 anos, sou morador de
+                                    Águas Lindas de Goiás, cidade que fica no entorno do Distrito Federa e estou no fim
+                                    do
+                                    meu curso de Análise
+                                    e Desenvolvimento de Sistema. Amo
+                                    desafios e sei que essa área requer muito mais que uma faculdade, por isso tenho me
+                                    capacitado para se tornar um profissional atualizado e competente.
+                                    Domino algumas linguagens de front-end e no momento estou estudando Nodejs e ReactJs
+                                    para aprimorar e elevar meus conhecimentos.
                                 </p>
                             </div>
+                            <div class="languages">
+                                <ul>
+                                    <li><span>HTML</span></li>
+                                    <li><span>CSS</span></li>
+                                    <li><span>Javascript</span></li>
+                                    <li><span>Bootstrap</span></li>
+                                    <li><span>Nodejs</span></li>
+                                    <li><span>ReactJs</span></li>
+                                    <li><span>MySQL</span></li>
+                                    <li><span>PostgresSQL</span></li>
+                                </ul>
+                            </div>
+                            <div class="donwload-cv">
+                                <a href="assets/documents/Kalebe.pdf" class="">Donwload CV <i
+                                        class="fa-solid fa-download"></i>
+                                </a>
+                            </div>
+
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="glass">
-                                <i class="fa-brands fa-html5" style="color:#E54B25;"></i><i class="fa-brands fa-css3"
-                                    style="color:#396DC0;"></i>
-                                <i class="fa-brands fa-node-js"></i><i class="fa-brands fa-js"
-                                    style="color: #F7E018;"></i>
-                                <h2>Full Stack</h2>
-                                <p>Depois de muitos estudos chegamos ao Full Stack conhecedor das duas etapas
-                                    anteriores. É aqui onde quero cheagar =)</p>
+                    </div>
+
+                    <div class="our-service mt-5">
+                        <h1 class="d-flex justify-content-center">Etapas do meu processo</h1>
+
+                        <div class="row mt-5">
+                            <div class="col-md-4 mb-3">
+                                <div class="glass">
+                                    <i class="fa-brands fa-html5" style="color:#E54B25;"></i><i
+                                        class="fa-brands fa-css3" style="color:#396DC0;"></i>
+                                    <h2>Front-End</h2>
+                                    <p>Etapa relacionada com interface, focando na experiência do usuário. Dentre as
+                                        diversas tecnologias temos, HTML, CSS, Bootstrap, ReactJs entre outras.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+
+                                <div class="glass">
+                                    <i class="fa-brands fa-node-js"></i><i class="fa-brands fa-js"
+                                        style="color: #F7E018;"></i>
+                                    <h2>Back-End</h2>
+                                    <p>Essa etapa não é visívil ao usuário e é
+                                        responsável por guardar as informações, gerenciar conteúdos e atualizações.
+                                        Dentre
+                                        as tecnologias temos, PHP, Nodejs, Python, Java, entre outras.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="glass">
+                                    <i class="fa-brands fa-html5" style="color:#E54B25;"></i><i
+                                        class="fa-brands fa-css3" style="color:#396DC0;"></i>
+                                    <i class="fa-brands fa-node-js"></i><i class="fa-brands fa-js"
+                                        style="color: #F7E018;"></i>
+                                    <h2>Full Stack</h2>
+                                    <p>Depois de muitos estudos chegamos ao Full Stack conhecedor das duas etapas
+                                        anteriores. É aqui onde quero cheagar =)</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </section>
+
+
+
+          <!--
+                SECTION HABILIDADES  
+        -->
+
+
 
         <section class="skills-me">
             <div class="container">
@@ -193,7 +234,7 @@
                     <div class="col-lg-6">
                         <h1>Habilidades Profissionais</h1>
                         <div class="glass2">
-                            <ul class="row">
+                            <ul>
                                 <li>
                                     <div class="professional-skills">
                                         <div class="outer">
@@ -293,6 +334,56 @@
             </div>
         </section>
 
+
+
+        <!--
+                SECTION PORTIFOLIO  
+        -->
+
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="divider">
+                    <h1 class="text-center" style="color:#FFF;">Portifólio</h1>
+                </div>
+               
+                    
+                    <div class="slider">
+                      
+                        <video class="video-slide active" src="assets/videos/1.mp4" autoplay muted loop></video>
+                        <video class="video-slide" src="assets/videos/2.mp4" autoplay muted loop></video>
+                        <video class="video-slide" src="assets/videos/3.mp4" autoplay muted loop></video>
+                        
+
+                        <div class="portfolio-content active">
+                            <h1>Projeto 1<span>anitube</span></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed velit et? Eligendi eius placeat ipsum. Rem officia fugit quisquam ipsam! Tenetur impedit nesciunt nisi atque distinctio, modi maxime culpa?</p>
+                            <a href="">Link para o projeto</a>
+                        </div>
+                        <div class="portfolio-content">
+                            <h1>Projeto 2<span>anime</span></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed velit et? Eligendi eius placeat ipsum. Rem officia fugit quisquam ipsam! Tenetur impedit nesciunt nisi atque distinctio, modi maxime culpa?</p>
+                            <a href="">Link para o projeto</a>
+                        </div>
+                        <div class="portfolio-content">
+                            <h1>Projeto 3<span>page</span></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed velit et? Eligendi eius placeat ipsum. Rem officia fugit quisquam ipsam! Tenetur impedit nesciunt nisi atque distinctio, modi maxime culpa?</p>
+                            <a href="">Link para o projeto</a>
+                        </div>
+                            
+                        <div class="slider-navigation">
+                            <div class="btn-slide active"></div>
+                            <div class="btn-slide"></div>
+                            <div class="btn-slide"></div>
+                        </div>
+
+                        
+                        
+                    </div>
+                   
+                </div>    
+        </section>
+
     </main>
 
 
@@ -306,6 +397,12 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="assets/js/script.js"></script>
+    
+ 
+
+
+    
+    
 </body>
 
 </html>
