@@ -78,16 +78,24 @@ li {
 header nav {
     position: fixed;
 }
-
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 999;
     padding: 0;
 }
-
+.navbar .mobile-menu{
+    cursor:pointer;
+    display: none;
+}
+.navbar .mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
 .navbar .navbar-collapse ul {
     margin-right: 15px;
     margin-left: 15px;
@@ -96,19 +104,34 @@ header nav {
 .navbar-brand span {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 25px;
+    margin: auto;
     color: #FFF;
     margin-left: 15px;
 }
-
-.navbar .navbar-nav li a {
-    font-size: 18px;
+.navbar ul li {
+    margin-left: 30px;
+    font-weight:400;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
 }
-
-.navbar.navbar-dark .navbar-nav .nav-link {
+.navbar.navbar-dark ul .nav-link {
     color: #FFF;
 }
-
+.navbar ul li a::after{
+   content:'';
+   height: 3px;
+   width: 0;
+   background: #009688;
+   position:absolute;
+   left:0;
+   bottom: 0;
+   transition: 0.5s;
+}
+.navbar .navbar-nav li a:hover::after{
+    width: 100%;
+}
 .navbar.navbar-dark .navbar-nav .nav-link:hover {
     color: #009688;
 }
@@ -649,6 +672,43 @@ svg {
 
 
 
+/* SECTION CONTACT
+**/
+.contact{
+    height: 600px;
+    background-color: #262536;
+}
+.contact h1{
+    color: #fff;
+    text-align: center;
+}
+.contact .row{
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+.contact .row a:not(:first-child){
+    margin-top: 15px;
+}
+.contact a{
+    border: 1px solid #009688;
+    border-radius: 15px;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.contact a:hover{
+    transform: scale(1.2);
+}
+.contact .border1 .content{
+    font-family: monospace;
+    font-weight: 300;
+    font-size: 25px;
+}
+.contact i{
+    margin-left: 15px;
+    font-size: 30px;
+}
 
 
 
@@ -659,6 +719,23 @@ svg {
 
 
 @media(max-width: 991px) {
+    #menu-area{
+        display: none;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #212529;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: all ease .5s;
+        overflow:hidden;
+    }
+    .navbar .mobile-menu{
+        display: block;
+    }
     .about-me .donwload-cv {
         margin-top: 50px;
     }
@@ -758,5 +835,10 @@ svg {
     .slider .portfolio-content a {
         font-size: 0.8em;
     }
-
+    .slider .portfolio-content h1 {
+        margin-bottom: 0;
+    }
+    .slider .portfolio-content p {
+        margin-bottom: 30px;
+    }
 }

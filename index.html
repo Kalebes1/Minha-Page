@@ -31,29 +31,33 @@
                 <a href="index.html" class="navbar-brand">
                     <img id="logo" src="assets/img/logo.png" alt="Kalebe-logo"><span>Kalebe Silva</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
-                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-links">
-                    <ul class="navbar-nav ms-auto">
+                
+                <div class="mobile-menu" onclick="menuToggle()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                
+
+
+                    <ul class="navbar-nav ms-auto" id="menu-area">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#" onclick="Home()">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="#" onclick="Sobre()">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Habilidades</a>
+                            <a class="nav-link" href="">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portifólio</a>
+                            <a class="nav-link" href="">Portifólio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="">Contato</a>
                         </li>
                     </ul>
-                </div>
+
 
             </div>
         </nav>
@@ -382,6 +386,46 @@
                     </div>
                    
                 </div>    
+        </section>
+
+
+
+          <!--
+                SECTION CONTATO 
+        -->
+
+
+
+        <section class="contact">
+            <div class="container">
+                <div class="divider">
+                    <h1>Contato</h1>
+                </div>
+                    <div class="row">
+                        
+                        <a href="https://github.com/Kalebes1" target="_blank">
+                            <div class="col-12 border1">
+                                <div class="content">GitHub<i
+                                    class="fa-brands fa-github"></i></div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/kalebe-silva-208135197/" target="_blank">
+                            <div class="col-12 border1">
+                                <div class="content">Linkedin<i
+                                    class="fa-brands fa-linkedin"></i></div>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/55061991938281" target="_blank"">
+                            <div class="col-12 border1">
+                                <div class="content">WhatsApp<i
+                                    class="fa-brands fa-whatsapp"></i></div>
+                            </div>
+                        </a>
+                    </div>
+                 
+            </div>
         </section>
 
     </main>
