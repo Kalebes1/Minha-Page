@@ -14,6 +14,28 @@
 
 /** SCROLL */
 
+const menuLinks = document.querySelectorAll('.navbar-nav a[href^="#"]');
+
+function getDistanceFromTop(element){
+    const id = element.getAttribute("href")
+    return document.querySelector(id).offsetTop;
+}
+function nativeScroll(distanceFromTop){
+    window.scroll({
+        top: distanceFromTop,
+        behavior: "smooth",
+    })
+}
+function scrollToSection(event){
+    event.preventDefault();
+    const distanceFromTop = getDistanceFromTop(event.target) - 30;
+    nativeScroll(distanceFromTop)
+}
+
+menuLinks.forEach((link)=>{
+    link.addEventListener("click",scrollToSection);
+});
+
 
 
 
