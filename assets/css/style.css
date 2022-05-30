@@ -612,8 +612,10 @@ svg {
 
 .slider .portfolio-content p {
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 40px;
     font-weight: 300;
+    
 }
 
 .slider .portfolio-content a {
@@ -633,7 +635,7 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 340px;
+    top: 690px;
     transform: translateY(80px);
 }
 
@@ -694,12 +696,12 @@ svg {
 .contact a{
     border: 1px solid #009688;
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
     text-decoration: none;
     color: #fff;
 }
 .contact a:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .contact .border1 .content{
     font-family: monospace;
@@ -712,8 +714,44 @@ svg {
 }
 
 
+/*  Overlay
+*/
 
-
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262536;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    width: 80px;
+    height: 80px;
+}
+.loader::after{
+    content: "";
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    margin: 8px;
+    animation: spin 1.2s ease infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 /*MEDIAS QUERY
 **/
@@ -723,14 +761,14 @@ svg {
     #menu-area{
         display: none;
         position: absolute;
-        top: 85px;
+        top: 80px;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: calc(100vh - 80px);
         background: #212529;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         transition: all ease .5s;
         overflow:hidden;
     }
@@ -806,10 +844,6 @@ svg {
 @media(max-width: 767px) {
     .about-me {
         height: 2100px;
-    }
-
-    .slider-navigation{
-        top: 710px;
     }
 
 }
