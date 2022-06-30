@@ -754,14 +754,11 @@ svg {
 [data-anime]{
     opacity: 0;
     transition: .5s;
+    display: none;
 }
 [data-anime="skills"]{
     transform: translate3d(-50px, 0, 0);
-    display: none;
-}
-[data-anime="right"]{
-    transform: translate3d(50px, 0, 0);
-    display: none;
+    
 }
 [data-anime].animate{
     opacity: 1;
