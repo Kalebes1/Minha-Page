@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*SCROLL
@@ -18,15 +18,6 @@ body {
     border-radius: 50px;
     border: 2px solid white;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -65,8 +56,6 @@ li {
 
 
 
-
-
 /*  BARRA DE NAVEGAÇÃO
 **/
 
@@ -87,7 +76,7 @@ header nav {
     display: none;
 }
 #logo {
-    width: 250px;
+    width: 175px;
 }
 .navbar .mobile-menu div{
     width: 32px;
@@ -108,6 +97,7 @@ header nav {
 }
 .navbar.navbar-dark ul .nav-link {
     color: #FFF;
+    font-size: 15px;
 }
 .navbar ul li a::after{
    content:'';
@@ -124,6 +114,9 @@ header nav {
 }
 .navbar.navbar-dark .navbar-nav .nav-link:hover {
     color: #009688;
+}
+.navbar .active::after{
+    width: 100%;
 }
 
 
@@ -151,6 +144,7 @@ MAIN SECTION HOME
 .main-section .row .text-1 {
     width: 200px;
     padding: 5px 0;
+    font-size: 14px;
     text-align: center;
     margin: 20px 10px;
     border-radius: 15px;
@@ -179,14 +173,20 @@ MAIN SECTION HOME
 }
 
 .main-section .row .name {
-    font-size: 60px;
+    font-weight: 500;
+    font-size: 50px;
+}
+.main-section .row h2 {
+    font-weight: 400;
+    color:rgb(233, 221, 221) ;
+    font-size: 20px;
 }
 
 .main-section .row img {
     margin-top: 15px;
-    width: 300px;
+    width: 250px;
     border-radius: 150px;
-    background-color: #212529;
+    background: linear-gradient(88.25deg,#212529 .18%,#5E6A75 37.7%,#212529 119.08%);
     border: 1px solid #212529;
     padding: 0.50rem;
 }
@@ -195,10 +195,12 @@ MAIN SECTION HOME
     font-size: 40px;
     margin-top: 20px;
     margin-left: 20px;
-    color: #CCC;
+    color: #FFF;
+    transition: all ease .3s;
 }
 
 .main-section .row i:hover {
+    opacity: .9;
     color: #009688;
 }
 
@@ -221,12 +223,18 @@ MAIN SECTION HOME
 
 
 .about-me {
-    height: 1100px;
     background-image: linear-gradient(180deg, #41405C, #2F2E42);
 }
-
 .about-me .row .col-sm-6 {
     margin-top: 50px;
+}
+.about-me .content h1{
+    margin-top: 25px;
+}
+.about-me .divider p{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(190, 179, 179);
 }
 
 .languages ul {
@@ -252,14 +260,14 @@ MAIN SECTION HOME
 .about-me .donwload-cv a {
     display: inline-block;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 17px;
     color: #FFF;
     width: 300px;
     margin-top: 25px;
     border: 1px solid #009688;
     padding: 15px;
-    background-color: #009688;
+    background: linear-gradient(88.25deg,#009688 .18%,#147BC9 37.7%,#65BBFC 119.08%);
     border-radius: 50px;
     text-align: center;
 }
@@ -272,7 +280,7 @@ MAIN SECTION HOME
     padding: 20px;
     border-radius: 15px;
     background-color: #4A4969;
-    box-shadow: #009688;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     height: 250px;
 }
 
@@ -285,17 +293,6 @@ MAIN SECTION HOME
     margin-top: 15px;
     font-weight: 500;
 }
-
-.about-me .our-service .row p {
-    margin-top: 10px;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-
-
-
-
 
 
 
@@ -310,7 +307,6 @@ MAIN SECTION HOME
 
 
 .skills-me {
-    height: 800px;
     background-color: #262536;
 }
 
@@ -342,7 +338,7 @@ habilidades tecnicas
 **/
 
 .skills-me .skils-technical h2 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 30px;
@@ -350,7 +346,7 @@ habilidades tecnicas
 
 .progress-bar-one {
     background: #959595;
-    width: 95%;
+    width: 100%;
     height: 10px;
     border-radius: 15px;
 }
@@ -476,7 +472,7 @@ habilidades tecnicas
 }
 
 .skill-name {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .outer {
@@ -502,7 +498,7 @@ habilidades tecnicas
 }
 
 .number {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 800;
     color: #FFF;
 }
@@ -753,8 +749,52 @@ svg {
     }
 }
 
+/*ANIMAÇÃO*/
+
+[data-anime]{
+    opacity: 0;
+    transition: .5s;
+}
+[data-anime="skills"]{
+    transform: translate3d(-50px, 0, 0);
+    display: none;
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+    display: none;
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    display: block;
+  
+}
+
+/* SCROLLREVEAL
+*/
+
+
+.text-1, .name, .social-medias, .main-section img{
+    visibility: hidden;
+}
+
+.about-me .row, .about-me .our-service, .about-me .donwload-cv, .about-me.content {
+    visibility: hidden;
+}
+.portfolio h1, .portfolio .slider{
+    visibility: hidden;
+}
+.contact h1, .contact .row{
+    visibility: hidden;
+}
+
+
+
 /*MEDIAS QUERY
 **/
+
+
+
 
 
 @media(max-width: 991px) {
@@ -784,18 +824,10 @@ svg {
         margin: auto;
     }
 
-    .about-me {
-        height: 1500px;
-    }
 
     .about-me .our-service .glass {
         height: 300px;
     }
-
-    .skills-me {
-        height: 1400px;
-    }
-
     .skills-me .col-lg-6:last-child {
         margin-top: 100px;
     }
@@ -841,13 +873,6 @@ svg {
 
 }
 
-@media(max-width: 767px) {
-    .about-me {
-        height: 2100px;
-    }
-
-}
-
 @media (max-width: 575px) {
     .main-section .row .col-sm-6:first-child {
         margin-top: 50px;
@@ -861,7 +886,7 @@ svg {
     }
 
     .main-section .row .name {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .main-section .row i {
@@ -869,7 +894,7 @@ svg {
     }
 
     .main-section .row img {
-        width: 250px;
+        width: 200px;
     }
 
     .slider .portfolio-content a {
